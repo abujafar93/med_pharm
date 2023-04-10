@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.logIncontainer {
+    background: url(../Images/logInBg.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: rgb(102, 102, 102);
+    margin: auto;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    margin-top: 2rem;
+    box-shadow: 0 21px 45px rgba(30,66,138,.1);
+    border-radius: 20px;
+    padding: 50px 20px;
+    min-width: 600px;
+    min-height: 80vh;
+    padding: 3rem 2rem 0.5rem 2rem;
+}
+
+.logo {
+    line-height: 22.5px;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    color: #00B5FF;
+    height: 23px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.danger_msg{
+    visibility: hidden;
+    padding: 0.50rem 1rem;
+    margin-bottom:    0.5rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    width: 100%;
+    text-align: center
+}
+
+.input_box {
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    width: 90%;
+}
+
+input {
+    background: #ffffff;
+    border: 1px solid rgba(208, 208, 208);
+    width: 95%;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+input::placeholder{
+    font-weight: 480;
+    font-size: 16px;
+    line-height: 20px;
+    color: #CACACA;
+}
+
+
+input:focus {
+    border: 2px solid #00B5FF;
+    outline: none;
+}
+
+.password {
+    position: relative;
+}
+
+.password .icon {
+    position: absolute;
+    top: 1.6rem;
+    right: 2.5rem;
+    cursor: pointer;
+}
+
+.forget_psw {
+    text-decoration:none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #00B5FF;
+}
+
+.logIn_btn{
+    padding: 10px 17px;
+    gap: 10px;
+    background: #00B5FF;
+    border-radius: 5px;
+    border: none;
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #CACACA;
+    text-align: center;
+}
