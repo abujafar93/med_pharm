@@ -6,13 +6,14 @@
 
 .dashBoard {
     display: flex;
-    height: 100vh;
+    height: 800px;
 }
 
 .sideBar {
     display: flex;
     flex-direction: column;
     width: 250px;
+    height: 100%;
     background: #ffffff;
     padding: 20px 0px;
     font-family: "Poppins";
