@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    background: #F7F7FA;
+}
+
+.drug {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Poppins';
+}

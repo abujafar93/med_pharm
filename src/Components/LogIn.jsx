@@ -13,8 +13,6 @@ const LogIn = () => {
         setShowPassword(!showPassword)
     }
 
-    // const emailPattern = /^[^]+@[^ ]+\.[a-z]$/;
-
   return (
     <div className='logIncontainer'>
         <div className='card'>

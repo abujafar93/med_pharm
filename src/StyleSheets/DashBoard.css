@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dashBoard {
+    display: flex;
+    height: 100vh;
+}
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background: #ffffff;
+    padding: 20px 0px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    box-shadow: 0px 21px 45px rgba(30, 66, 138, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    background: #F7F7FA;
+}
+
+.Logo_Box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.bar_box{
+    margin-bottom: 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.bar_box2{
+    display: flex;
+    justify-content: center;
+}
+
+.bar_box3 {
+    margin-right: 15px;
+    padding: 3px
+}
+
+.bar_box:active{
+    background: #00B5FF;
+    opacity: 0.08;
+    color: #00B5FF;
+}
+
+.dashDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.NoOfOrgRow, .MarketOverviewRow, .RecentActivitiesRow {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.Org, .TotInvent, .DrugCat, .TotAmt {
+    height: 134px;
+    width: 260px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.market {
+    height: 250px;
+    width: 820px;
+    border: 10px;
+    background: #ffffff;
+}
+
+.drugHighDemand {
+    width: 260px;
+    height: 250px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.Recent {
+    width: 540px;
+    height: 250px;
+    background: #ffffff;
+    border-radius: 10px;
+} 
+
+.drug-cat{
+    width: 260px;
+    height: 250px;
+    background: #ffffff;
+    border-radius: 10px;
+} 
+
+.topClient {
+    width: 260px;
+    height: 250px;
+    background: #ffffff;
+    border-radius: 10px;
+}

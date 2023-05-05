@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    background: #F7F7FA;
+}
+
+.staff {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+
+.head_box {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.total_staff, .admin, .other_roles {
+    display: flex;
+    gap: 20px;
+    padding:  20px;
+}
+
+.total_staff p, .admin p, .other_roles p{
+    margin-bottom: 20px;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.total_staff, .admin, .other_roles {
+    width: 355px;
+    height: 134px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 21px 45px rgba(30, 66, 138, 0.1);
+}
+
+.total_staff_icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #FFC5A9 0%, rgba(247, 148, 99, 0.94) 100%);
+    box-shadow: 0px 20px 50px rgba(97, 97, 97, 0.25);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin_icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #92E7BF 0%, #39B67B 100%);
+    box-shadow: 0px 20px 50px rgba(97, 97, 97, 0.25);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roles_icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #FFAE99 0%,rgba(226, 48, 1, 0.94) 100%);
+    box-shadow: 0px 20px 50px rgba(97, 97, 97, 0.25);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .icon_color {
+    color: #ffffff;
+ }
+
+.staff_list {
+    background: #ffffff;
+    height: 500px;
+    border-radius: 4px;
+    padding: 20px 0px;
+}
+
+
+.table_filter_row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 5px 20px;
+}
+
+.table_search, .table_filter {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.table_search {
+    position: relative;
+}
+
+.table_search::before{
+    content: "";
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 15px;
+    height: 15px;
+    background: url(../Images/searchIcon.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
+.table_search input {
+    background-color: #F4F7F9;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.table_filter button {
+    width: 153px;
+    padding: 10px 20px;
+    background: #00b5ff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+    order: 1;
+    flex: none;
+    flex-grow: 0;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr td, table tr th {
+    padding:  10px 5px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+table tr:nth-child(odd){
+    background: #F7F7FA;
+    border: 1px solid #E2E3EB;
+}
