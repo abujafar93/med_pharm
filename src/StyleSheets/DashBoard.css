@@ -6,7 +6,7 @@
 
 .dashBoard {
     display: flex;
-    height: 800px;
+    height: 1000px;
 }
 
 .sideBar {
@@ -75,11 +75,58 @@
     margin-bottom: 20px;
 }
 
-.Org, .TotInvent, .DrugCat, .TotAmt {
+.NoOfOrg, .TotInvent, .DrugCat, .TotAmt {
     height: 134px;
     width: 260px;
     border-radius: 10px;
     background: #ffffff;
+    box-shadow: 0px 21px 45px rgba(30, 66, 138, 0.1);
+}
+
+.AmountTotal, .CatOfDrug, .InventTot, .OrgNum {
+    display: flex;
+    gap: 20px;
+    padding:  20px;
+}
+
+.AmountTotal p, .CatOfDrug p, .InventTot p, .OrgNum p{
+    margin-bottom: 20px;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.org_icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #FFC5A9 0%, rgba(247, 148, 99, 0.94) 100%);
+    box-shadow: 0px 20px 50px rgba(97, 97, 97, 0.25);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invent_icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #92E7BF 0%, #39B67B 100%);
+    box-shadow: 0px 20px 50px rgba(97, 97, 97, 0.25);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drug_icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #FFAE99 0%, rgba(226, 48, 1, 0.94) 100%);
+    box-shadow: 0px 20px 50px rgba(97, 97, 97, 0.25);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .market {

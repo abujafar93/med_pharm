@@ -130,7 +130,6 @@ const Staff = () => {
         <div className='container'>
             <Header />
             <div className='staff'>
-
                 <div className='head_box'>
                     <div className='total_staff'>
                         <div className='total_staff_icon'><HiUsers className='icon_color'/></div>
