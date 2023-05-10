@@ -172,7 +172,7 @@ const Drugs = () => {
                     <div className='table_filter_row'>
                         <div className='table_search'>
                             <h3>Drugs</h3>
-                            <input type="search" placeholder='Search staff' />
+                            <input type="search" placeholder='Search Drugs' />
                         </div>
                         <div className='table_filter'>
                             <p>Filter</p>

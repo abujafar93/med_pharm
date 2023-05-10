@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../StyleSheets/Staff.css"
 import { MdDashboard, } from "react-icons/md";
 import SideNav from './SideNav';
@@ -6,7 +6,8 @@ import { HiUsers} from "react-icons/hi"
 import { RiUserFollowFill } from "react-icons/ri"
 import { FaUserAlt } from "react-icons/fa"
 import Header from './Header';
-
+import Pagination from '../Pagination/paginate';
+import { useNavigate } from 'react-router-dom';
 
 const Staff = () => {
    let datas = [
@@ -119,8 +120,239 @@ const Staff = () => {
             date: '10/11/2021',
             Status: 'Status',
             actions: 'pen icon'
+        },
+        {
+            id: 1,
+            name: 'Kazeem Akio',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
+        },
+        {
+            id: 2,
+            name: 'Lekan Alao',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Suspected',
+            actions: 'pen icon'
+        },
+        {
+            id: 3,
+            name: 'Wale Adenuga',
+            designation: 'Clerk',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Deleted',
+            actions: 'pen icon'
+        },
+        {
+            id: 4,
+            name: 'Aliko Dangote',
+            designation: 'Store Keeper',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
+        },
+        {
+            id: 5,
+            name: 'Ishola Ibrahim',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Suspended',
+            actions: 'pen icon'
+        },
+        {
+            id: 6,
+            name: 'Basit Imraan',
+            designation: 'Clerk',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
+        },
+        {
+            id: 7,
+            name: 'Adeleke Maryam',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Deleted',
+            actions: 'pen icon'
+        },
+        {
+            id: 8,
+            name: 'Kazeem Jimoh',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
+        },
+        {
+            id: 9,
+            name: 'Raymond Akio',
+            designation: 'Store Keeper',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
+        },
+        {
+            id: 10,
+            name: 'Kazeem Akio',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
+        },
+        {
+            id: 1,
+            name: 'Kazeem Akio',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
+        },
+        {
+            id: 2,
+            name: 'Lekan Alao',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Suspected',
+            actions: 'pen icon'
+        },
+        {
+            id: 3,
+            name: 'Wale Adenuga',
+            designation: 'Clerk',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Deleted',
+            actions: 'pen icon'
+        },
+        {
+            id: 4,
+            name: 'Aliko Dangote',
+            designation: 'Store Keeper',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
+        },
+        {
+            id: 5,
+            name: 'Ishola Ibrahim',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Suspended',
+            actions: 'pen icon'
+        },
+        {
+            id: 6,
+            name: 'Basit Imraan',
+            designation: 'Clerk',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
+        },
+        {
+            id: 7,
+            name: 'Adeleke Maryam',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Deleted',
+            actions: 'pen icon'
+        },
+        {
+            id: 8,
+            name: 'Kazeem Jimoh',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
+        },
+        {
+            id: 9,
+            name: 'Raymond Akio',
+            designation: 'Store Keeper',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
+        },
+        {
+            id: 10,
+            name: 'Kazeem Akio',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: 'pen icon'
         }
     ]
+
+    const navigate = useNavigate()
+    const [pageNum, setPageNum] = useState(0);
+
+    const usersPerPage = 10;
+    const pageVisited = pageNum * usersPerPage;
+    const handlePageClick = ({ selected }) => {
+      setPageNum(selected);
+    };
+
+    const pageCount = Math.ceil(datas.length / usersPerPage);
 
   return (
     <div className='dashBoard'>
@@ -164,7 +396,7 @@ const Staff = () => {
                         </div>
                         <div className='table_filter'>
                             <p>Filter</p>
-                            <button>+    Add Staff</button>
+                            <button className='btn' onClick={()=>{navigate("/staffOnBoarding1")}}>+    Add Staff</button>
                         </div>
                     </div>
 
@@ -182,7 +414,9 @@ const Staff = () => {
                                 <th>Actions</th>
                             </tr>
                             {
-                            datas.map((data)=>{
+                            datas
+                            .slice(pageVisited, pageVisited + usersPerPage)
+                            .map((data)=>{
                                 return(
                                     <tr>
                                         <td>{data.id}</td>
@@ -200,6 +434,9 @@ const Staff = () => {
                             })
                             }
                         </table>
+                        <div className="PaginationDetails">
+                        <Pagination pageCount={pageCount} handlePageClick={handlePageClick} />
+                          </div>
                     </div>
                 </div>
             </div>

@@ -21,7 +21,7 @@ const SideNav = () => {
       <div className='bar_box'>
         <div className='bar_box2'>
           <div className='bar_box3'><MdDashboard/></div>
-          <Link style={{textDecoration: "none", color:"inherit", marginBottom:"20px"}} to="/dashboard">DashBoard</Link>
+          <Link style={{textDecoration: "none", color:"inherit", marginBottom:"20px"}} to="/">DashBoard</Link>
         </div>
       </div>
 

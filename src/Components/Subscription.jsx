@@ -175,7 +175,7 @@ const Subscription = () => {
                         </div>
                         <div className='table_filter'>
                             <p>Filter</p>
-                            <button>+    Create Subscription</button>
+                            <button className='subBtn'>+    Create Subscription</button>
                         </div>
                     </div>
 

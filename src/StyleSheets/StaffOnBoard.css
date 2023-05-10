@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.staffOnBoard {
+    width: 100vw;
+    height: 100vh;
+    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    font-weight: 500;
+    size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-style: normal;
+}
+
+.onBoardContainer{
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 21px 45px rgba(30, 66, 138, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+
+.OnBoardSideBar {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 21px 45px rgba(30, 66, 138, 0.1);
+    border-radius: 10px 0px 0px 10px;
+    width: 277px;
+    height: 100%;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 120px;
+}
+
+.sideBarList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.eachItemList{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.numbering {
+    border: 2px solid #666666;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.onBoard1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 921px;
+    padding: 40px 0px;
+}
+
+.onBoardHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.onBoard1 .boardTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.onBoard1 .boardCol {
+    display: flex;
+    width: 85%;
+    /* gap: 100px; */
+    justify-content: space-around;
+    margin-bottom:15px;
+    border-bottom: 2px solid #C4C4C4;
+}
+
+.InputRow{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.InputRow input {
+    width: 350px;
+    height: 50px;
+    border-radius: 6px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: #C4C4C4;
+    padding: 10px;
+    border: 1px solid rgba(208, 208, 208, 0.5);
+    margin-bottom: 10px;
+}
+
+.onBoard1 .upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.onBoard1 .upload div input{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.onBoardBtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.onBoardBtns .btn1{
+    padding: 10px 17px;
+    width: 20%;
+    height: 50px;
+    border: 1px solid #C4C4C4;
+    background: #ffffff;
+    border-radius: 5px;
+    color: #C4C4C4;
+}
+
+.onBoardBtns .btn2 {
+    padding: 10px 17px;
+    width: 274px;
+    height: 50px;
+    background: #00B5FF;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.emailSetUp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    padding: 30px 0px;
+}
+
+.emailInputBox input{
+    width: 733px;
+    height: 50px;
+    border: 1px solid rgba(208, 208, 208, 0.5);
+    border-radius: 6px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: #C4C4C4;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.emailBtn {
+    width: 274px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailBtn button {
+    width: 100%;
+    height: 100%;
+    padding: 10px 17px;
+    background: #00B5FF;
+    border: none;
+    color: #ffffff;
+}

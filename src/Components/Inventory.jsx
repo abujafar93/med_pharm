@@ -170,11 +170,11 @@ const Inventory = () => {
                     <div className='table_filter_row'>
                         <div className='table_search'>
                             <h3>All Inventory</h3>
-                            <input type="search" placeholder='Search staff' />
+                            <input type="search" placeholder='Search inventory' />
                         </div>
                         <div className='table_filter'>
                             <p>Filter</p>
-                            <button>+    Create Inventory</button>
+                            <button className='inventBtn'>+    Create Inventory</button>
                         </div>
                     </div>
 

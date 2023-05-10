@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -22,4 +25,21 @@
     font-style: normal;
     font-weight: 400;
     font-family: 'Poppins';
+}
+
+
+.setBtn {
+    width: 209px;
+    padding: 10px 17px;
+    background: #00b5ff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+    order: 1;
+    flex: none;
+    flex-grow: 0;
+    height: 50px;
 }

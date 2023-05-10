@@ -1,0 +1,104 @@
+.pagination {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(247, 247, 253);
+    border: 2px solid #f0eded;
+  
+    border-radius: 20px;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .pagination a {
+    text-decoration: none;
+    list-style: none;
+    color: #259fd8;
+  }
+  
+  .pagination__link--active {
+    border: 1px solid #d7e3e9;
+    padding: 10px;
+    background-color: #259fd8;
+  }
+  
+  .pagination__link--active a {
+    color: #fff;
+  }
+  
+  .pagination-design {
+    display: flex;
+    list-style-type: none;
+    margin: 3px;
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    border-radius: 90px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pagination-design a:hover {
+    display: flex;
+    list-style-type: none;
+    margin: 3px;
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    border-radius: 90px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #259fd8;
+    border: 1px solid#259fd8;
+    color: #fff;
+  }
+  
+  .break-class {
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 7px;
+    height: 30px;
+    border: 1px solid #259fd8;
+    width: 30px;
+    border-radius: 90px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .break-class:hover {
+    background-color: #259fd8;
+    color: #fff;
+  }
+  
+  .previous-button,
+  .next-button {
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 7px;
+    height: 30px;
+    width: 90px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #259fd8;
+    cursor: pointer;
+    box-shadow: 2px -3px 5px #8ab2cc inset;
+  }
+  
+  .pagination__link--disabled {
+    display: none;
+    /* cursor: not-allowed; */
+    /* color: gray; */
+  }

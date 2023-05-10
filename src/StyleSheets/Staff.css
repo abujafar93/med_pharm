@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -131,7 +134,7 @@
     width: 500px;
 }
 
-.table_filter button {
+.btn {
     width: 153px;
     padding: 10px 20px;
     background: #00b5ff;
