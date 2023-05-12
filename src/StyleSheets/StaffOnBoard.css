@@ -94,9 +94,8 @@
 .onBoard1 .boardCol {
     display: flex;
     width: 85%;
-    /* gap: 100px; */
     justify-content: space-around;
-    margin-bottom:15px;
+    margin-bottom:10px;
     border-bottom: 2px solid #C4C4C4;
 }
 
@@ -150,9 +149,10 @@
     background: #ffffff;
     border-radius: 5px;
     color: #C4C4C4;
+    cursor: pointer;
 }
 
-.onBoardBtns .btn2 {
+.onBoardBtns .btn2, .rolesBtn {
     padding: 10px 17px;
     width: 274px;
     height: 50px;
@@ -160,6 +160,7 @@
     border: none;
     border-radius: 5px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .emailSetUp {
@@ -198,4 +199,291 @@
     background: #00B5FF;
     border: none;
     color: #ffffff;
+    cursor: pointer;
+}
+
+.boardRates {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+
+.boardRates .roleContainer{
+    border: 1px solid rgba(208, 208, 208, 0.5);
+    border-radius: 6px;
+    width: 733px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rolesBox{
+    display: flex;
+    flex-direction: row;
+    border: 0.5px solid #C4C4C4;
+    height: 50px;
+    align-items: center;
+}
+
+.toggle {
+    width: 30px;
+    background: #00B5FF;
+    border-radius: 100px;
+}
+
+.addStaff {
+ width: 921px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ font-family: "Poppins";
+ font-style: normal;
+ font-weight: 400;
+ font-size: 16px;
+ letter-spacing: 0.2px;
+ color: #666666;
+ line-height: 16px;
+}
+
+.addStaffContainer {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+}
+
+.addUserTitle{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    text-align: center;
+}
+
+.backIconBox{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    width: 50%;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.addUserTitle h4 {
+    margin-bottom: 10px;
+}
+
+.staff_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border: 1px solid rgba(208, 208, 208, 0.5);
+    border-radius: 6px;
+    padding: 20px 0px;
+    height: 400px;
+}
+
+.staff_details img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.staffInputS {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.eachInputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.theInputedData{
+    letter-spacing: 0.1px;
+    line-height: 20px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.addUserBtn{
+    width: 274px;
+    height: 50px;
+    background: #00B5FF;
+    border-radius: 5px;
+    padding: 10px 17px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.AddUserBtnBox {
+    align-self: center;
+}
+
+.profilingStaff {
+    background: #E5E5E5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 500px;
+    gap: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 21px 45px rgba(30, 66, 138, 0.1);
+}
+
+.profile_info, .success_info{
+    height: 65px;
+    width: 100%;
+    border-radius: 9px 9px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.profile_info{
+    background: #F1F7FA;
+
+}
+
+.pInfo, .sInfo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: flex-end; */
+    /* gap: 50px; */
+    padding: 0px 20px 0px 0px;
+}
+
+.pInfo div, .sInfo div{
+    width: 95%;
+    display: flex;
+    text-align: right;
+    justify-content: center;
+}
+
+.cancel_icon{
+    border: none;
+    font-weight: 600;
+    color: #BCBCBC;
+    background: inherit;
+    width: 5%;
+    cursor: pointer;
+    text-align: right;
+}
+
+.profileWaitInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #666666;
+    height: 535px;
+    text-align: center;
+    gap: 20px;
+}
+
+.loader {
+    border: 10px solid #c7dce4;
+    border-top: 10px solid #00B5FF;
+    border-radius: 50%;
+    width: 96.67px;
+    height: 96.67px;
+    animation: spin 4s linear infinite;
+}
+
+.loader_info {
+    width: 300px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+     100% {
+        transform: rotate(360deg);        }
+}
+
+.onBoardingSuccess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #666666;
+    line-height: 24px;
+}
+
+.OnBoardinSuccessContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    border: 1px solid #00B5FF;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 0px 0px 20px 0px;
+}
+
+.success_info {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.successIconBox {
+    color: #39B67B;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.SuccessFinalise h4{
+    outline-width: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #00B5FF;
+    margin: 20px 0px;
+}
+
+.SuccessFinalise button {
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+
+.SuccessFinalise h4 {
+    cursor: pointer;
 }

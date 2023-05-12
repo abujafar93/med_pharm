@@ -16,11 +16,16 @@ import OtherClients from './OtherClients'
 import StaffOnBoarding1 from './StaffOnBoarding1'
 import StaffOnBoarding2 from './StaffOnBoarding2'
 import StaffOnBoarding3 from './StaffOnBoarding3'
+import AddStaff from './AddStaff'
+import ProfilingStaff from './ProfilingStaff'
+import OnboardingSuccess from './OnboardingSuccess'
+import EachStaffDetails from './EachStaffDetails'
+
 
 const Home = () => {
   return (
     <>
-    <Routes>
+	    <Routes>
 			<Route path="/" element={<DashBoard />}/>
 			<Route path="/staff" element={<Staff />}/>
             <Route path='/client' element={<OtherClients />}/>
@@ -32,6 +37,10 @@ const Home = () => {
 			<Route exact path="/staffOnBoarding1" element={<StaffOnBoarding1/>} />
 			<Route exact path='/staffOnBoarding2' element={<StaffOnBoarding2 />} />
 			<Route exact path='/staffOnBoarding3' element={<StaffOnBoarding3 />}/>
+			<Route exact path='/addStaff' element={<AddStaff />}/>
+			<Route exact path='/profilingStaff' element={<ProfilingStaff />} />
+			<Route exact path='/onBoardingSuccess' element={<OnboardingSuccess />}/>
+			<Route exact path='/eachStaffDetails' element={<EachStaffDetails />}/>
 		</Routes>
     </>
   )

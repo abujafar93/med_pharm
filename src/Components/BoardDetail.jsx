@@ -1,8 +1,6 @@
 import React from 'react'
-// import { useNavigate } from 'react-router-dom'
 
 const BoardDetail = () => {
-  // const navigate = useNavigate
   return (
     <div className='onBoardPerDetail'>
     <div  className='InputRow'>

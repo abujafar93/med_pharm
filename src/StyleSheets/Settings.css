@@ -42,4 +42,5 @@
     flex: none;
     flex-grow: 0;
     height: 50px;
+    cursor: pointer;
 }

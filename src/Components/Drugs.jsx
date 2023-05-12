@@ -4,12 +4,13 @@ import "../StyleSheets/Drug.css"
 import Header from './Header'
 import { AiFillFileText } from "react-icons/ai"
 import { BsBuildingsFill, BsCapsule } from "react-icons/bs"
-
+import { MdEdit } from "react-icons/md"
+import { BsThreeDotsVertical } from "react-icons/bs"
 
 const Drugs = () => {
   let my_datas = [
     {
-        id: 1,
+        id: <input type='checkbox'/>,
         name: 'Kazeem Akio',
         designation: 'Secretary',
         mobile: '+2348066460845',
@@ -17,10 +18,10 @@ const Drugs = () => {
         address: 'Plot 6, Orogun Ojoo Ibadan',
         date: '10/11/2021',
         Status: 'Status',
-        actions: 'pen icon'
+        actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
     },
     {
-        id: 2,
+        id: <input type='checkbox'/>,
         name: 'Lekan Alao',
         designation: 'Admin',
         mobile: '+2348066460845',
@@ -28,10 +29,10 @@ const Drugs = () => {
         address: 'Plot 6, Orogun Ojoo Ibadan',
         date: '10/11/2021',
         Status: 'Suspected',
-        actions: 'pen icon'
+        actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
     },
     {
-        id: 3,
+        id: <input type='checkbox'/>,
         name: 'Wale Adenuga',
         designation: 'Clerk',
         mobile: '+2348066460845',
@@ -39,10 +40,10 @@ const Drugs = () => {
         address: 'Plot 6, Orogun Ojoo Ibadan',
         date: '10/11/2021',
         Status: 'Deleted',
-        actions: 'pen icon'
+        actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
     },
     {
-        id: 4,
+        id: <input type='checkbox'/>,
         name: 'Aliko Dangote',
         designation: 'Store Keeper',
         mobile: '+2348066460845',
@@ -50,10 +51,10 @@ const Drugs = () => {
         address: 'Plot 6, Orogun Ojoo Ibadan',
         date: '10/11/2021',
         Status: 'Status',
-        actions: 'pen icon'
+        actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
     },
     {
-        id: 5,
+        id: <input type='checkbox'/>,
         name: 'Ishola Ibrahim',
         designation: 'Admin',
         mobile: '+2348066460845',
@@ -61,10 +62,10 @@ const Drugs = () => {
         address: 'Plot 6, Orogun Ojoo Ibadan',
         date: '10/11/2021',
         Status: 'Suspended',
-        actions: 'pen icon'
+        actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
     },
     {
-        id: 6,
+        id: <input type='checkbox'/>,
         name: 'Basit Imraan',
         designation: 'Clerk',
         mobile: '+2348066460845',
@@ -72,10 +73,10 @@ const Drugs = () => {
         address: 'Plot 6, Orogun Ojoo Ibadan',
         date: '10/11/2021',
         Status: 'Status',
-        actions: 'pen icon'
+        actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
     },
     {
-        id: 7,
+        id: <input type='checkbox'/>,
         name: 'Adeleke Maryam',
         designation: 'Admin',
         mobile: '+2348066460845',
@@ -83,10 +84,10 @@ const Drugs = () => {
         address: 'Plot 6, Orogun Ojoo Ibadan',
         date: '10/11/2021',
         Status: 'Deleted',
-        actions: 'pen icon'
+        actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
     },
     {
-        id: 8,
+        id: <input type='checkbox'/>,
         name: 'Kazeem Jimoh',
         designation: 'Secretary',
         mobile: '+2348066460845',
@@ -94,10 +95,10 @@ const Drugs = () => {
         address: 'Plot 6, Orogun Ojoo Ibadan',
         date: '10/11/2021',
         Status: 'Status',
-        actions: 'pen icon'
+        actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
     },
     {
-        id: 9,
+        id: <input type='checkbox'/>,
         name: 'Raymond Akio',
         designation: 'Store Keeper',
         mobile: '+2348066460845',
@@ -105,10 +106,10 @@ const Drugs = () => {
         address: 'Plot 6, Orogun Ojoo Ibadan',
         date: '10/11/2021',
         Status: 'Status',
-        actions: 'pen icon'
+        actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
     },
     {
-        id: 10,
+        id: <input type='checkbox'/>,
         name: 'Kazeem Akio',
         designation: 'Secretary',
         mobile: '+2348066460845',
@@ -116,7 +117,7 @@ const Drugs = () => {
         address: 'Plot 6, Orogun Ojoo Ibadan',
         date: '10/11/2021',
         Status: 'Status',
-        actions: 'pen icon'
+        actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
     }
 ]
   return (

@@ -4,15 +4,17 @@ import { MdDashboard, } from "react-icons/md";
 import SideNav from './SideNav';
 import { HiUsers} from "react-icons/hi"
 import { RiUserFollowFill } from "react-icons/ri"
+import { MdEdit } from "react-icons/md"
+import { BsThreeDotsVertical } from "react-icons/bs"
 import { FaUserAlt } from "react-icons/fa"
 import Header from './Header';
 import Pagination from '../Pagination/paginate';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Staff = () => {
-   let datas = [
+   let my_datas = [
         {
-            id: 1,
+            id: <input type='checkbox'/>,
             name: 'Kazeem Akio',
             designation: 'Secretary',
             mobile: '+2348066460845',
@@ -20,10 +22,10 @@ const Staff = () => {
             address: 'Plot 6, Orogun Ojoo Ibadan',
             date: '10/11/2021',
             Status: 'Status',
-            actions: 'pen icon'
+            actions: <span><MdEdit style={{marginRight:"5px", width:"24px", height:"24px", color:"#9EA0A5"}} /><BsThreeDotsVertical style={{marginLeft:"5px", width:"24px", height:"24px", color:"#9EA0A5"}}/></span>
         },
         {
-            id: 2,
+            id: <input type='checkbox'/>,
             name: 'Lekan Alao',
             designation: 'Admin',
             mobile: '+2348066460845',
@@ -31,10 +33,9 @@ const Staff = () => {
             address: 'Plot 6, Orogun Ojoo Ibadan',
             date: '10/11/2021',
             Status: 'Suspected',
-            actions: 'pen icon'
-        },
+            actions: <span><MdEdit style={{marginRight:"5px", width:"24px", height:"24px", color:"#9EA0A5"}} /><BsThreeDotsVertical style={{marginLeft:"5px", width:"24px", height:"24px", color:"#9EA0A5"}}/></span>        },
         {
-            id: 3,
+            id: <input type='checkbox'/>,
             name: 'Wale Adenuga',
             designation: 'Clerk',
             mobile: '+2348066460845',
@@ -42,10 +43,9 @@ const Staff = () => {
             address: 'Plot 6, Orogun Ojoo Ibadan',
             date: '10/11/2021',
             Status: 'Deleted',
-            actions: 'pen icon'
-        },
+            actions: <span><MdEdit style={{marginRight:"5px", width:"24px", height:"24px", color:"#9EA0A5"}} /><BsThreeDotsVertical style={{marginLeft:"5px", width:"24px", height:"24px", color:"#9EA0A5"}}/></span>        },
         {
-            id: 4,
+            id: <input type='checkbox'/>,
             name: 'Aliko Dangote',
             designation: 'Store Keeper',
             mobile: '+2348066460845',
@@ -53,10 +53,223 @@ const Staff = () => {
             address: 'Plot 6, Orogun Ojoo Ibadan',
             date: '10/11/2021',
             Status: 'Status',
-            actions: 'pen icon'
+            actions: <span><MdEdit style={{marginRight:"5px", width:"24px", height:"24px", color:"#9EA0A5"}} /><BsThreeDotsVertical style={{marginLeft:"5px", width:"24px", height:"24px", color:"#9EA0A5"}}/></span>        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Ishola Ibrahim',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Suspended',
+            actions: <span><MdEdit style={{marginRight:"5px", width:"24px", height:"24px", color:"#9EA0A5"}} /><BsThreeDotsVertical style={{marginLeft:"5px", width:"24px", height:"24px", color:"#9EA0A5"}}/></span>        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Basit Imraan',
+            designation: 'Clerk',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px", width:"24px", height:"24px", color:"#9EA0A5"}} /><BsThreeDotsVertical style={{marginLeft:"5px", width:"24px", height:"24px", color:"#9EA0A5"}}/></span>        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Adeleke Maryam',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Deleted',
+            actions: <span><MdEdit style={{marginRight:"5px", width:"24px", height:"24px", color:"#9EA0A5"}} /><BsThreeDotsVertical style={{marginLeft:"5px", width:"24px", height:"24px", color:"#9EA0A5"}}/></span>        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Kazeem Jimoh',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px", width:"24px", height:"24px", color:"#9EA0A5"}} /><BsThreeDotsVertical style={{marginLeft:"5px", width:"24px", height:"24px", color:"#9EA0A5"}}/></span>        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Raymond Akio',
+            designation: 'Store Keeper',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px", width:"24px", height:"24px", color:"#9EA0A5"}} /><BsThreeDotsVertical style={{marginLeft:"5px", width:"24px", height:"24px", color:"#9EA0A5"}}/></span>        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Kazeem Akio',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px", width:"24px", height:"24px", color:"#9EA0A5"}} /><BsThreeDotsVertical style={{marginLeft:"5px", width:"24px", height:"24px", color:"#9EA0A5"}}/></span>        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Kazeem Akio',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
         },
         {
-            id: 5,
+            id: <input type='checkbox'/>,
+            name: 'Lekan Alao',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Suspected',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Wale Adenuga',
+            designation: 'Clerk',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Deleted',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Aliko Dangote',
+            designation: 'Store Keeper',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Ishola Ibrahim',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Suspended',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Basit Imraan',
+            designation: 'Clerk',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Adeleke Maryam',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Deleted',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Kazeem Jimoh',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Raymond Akio',
+            designation: 'Store Keeper',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Kazeem Akio',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Kazeem Akio',
+            designation: 'Secretary',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Lekan Alao',
+            designation: 'Admin',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Suspected',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Wale Adenuga',
+            designation: 'Clerk',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Deleted',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
+            name: 'Aliko Dangote',
+            designation: 'Store Keeper',
+            mobile: '+2348066460845',
+            email: 'quadri1435@gmail.com',
+            address: 'Plot 6, Orogun Ojoo Ibadan',
+            date: '10/11/2021',
+            Status: 'Status',
+            actions: <span><MdEdit style={{marginRight:"5px"}} /><BsThreeDotsVertical /></span>
+        },
+        {
+            id: <input type='checkbox'/>,
             name: 'Ishola Ibrahim',
             designation: 'Admin',
             mobile: '+2348066460845',
@@ -67,7 +280,7 @@ const Staff = () => {
             actions: 'pen icon'
         },
         {
-            id: 6,
+            id: <input type='checkbox'/>,
             name: 'Basit Imraan',
             designation: 'Clerk',
             mobile: '+2348066460845',
@@ -78,7 +291,7 @@ const Staff = () => {
             actions: 'pen icon'
         },
         {
-            id: 7,
+            id: <input type='checkbox'/>,
             name: 'Adeleke Maryam',
             designation: 'Admin',
             mobile: '+2348066460845',
@@ -89,7 +302,7 @@ const Staff = () => {
             actions: 'pen icon'
         },
         {
-            id: 8,
+            id: <input type='checkbox'/>,
             name: 'Kazeem Jimoh',
             designation: 'Secretary',
             mobile: '+2348066460845',
@@ -100,7 +313,7 @@ const Staff = () => {
             actions: 'pen icon'
         },
         {
-            id: 9,
+            id: <input type='checkbox'/>,
             name: 'Raymond Akio',
             designation: 'Store Keeper',
             mobile: '+2348066460845',
@@ -111,227 +324,7 @@ const Staff = () => {
             actions: 'pen icon'
         },
         {
-            id: 10,
-            name: 'Kazeem Akio',
-            designation: 'Secretary',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 1,
-            name: 'Kazeem Akio',
-            designation: 'Secretary',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 2,
-            name: 'Lekan Alao',
-            designation: 'Admin',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Suspected',
-            actions: 'pen icon'
-        },
-        {
-            id: 3,
-            name: 'Wale Adenuga',
-            designation: 'Clerk',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Deleted',
-            actions: 'pen icon'
-        },
-        {
-            id: 4,
-            name: 'Aliko Dangote',
-            designation: 'Store Keeper',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 5,
-            name: 'Ishola Ibrahim',
-            designation: 'Admin',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Suspended',
-            actions: 'pen icon'
-        },
-        {
-            id: 6,
-            name: 'Basit Imraan',
-            designation: 'Clerk',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 7,
-            name: 'Adeleke Maryam',
-            designation: 'Admin',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Deleted',
-            actions: 'pen icon'
-        },
-        {
-            id: 8,
-            name: 'Kazeem Jimoh',
-            designation: 'Secretary',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 9,
-            name: 'Raymond Akio',
-            designation: 'Store Keeper',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 10,
-            name: 'Kazeem Akio',
-            designation: 'Secretary',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 1,
-            name: 'Kazeem Akio',
-            designation: 'Secretary',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 2,
-            name: 'Lekan Alao',
-            designation: 'Admin',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Suspected',
-            actions: 'pen icon'
-        },
-        {
-            id: 3,
-            name: 'Wale Adenuga',
-            designation: 'Clerk',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Deleted',
-            actions: 'pen icon'
-        },
-        {
-            id: 4,
-            name: 'Aliko Dangote',
-            designation: 'Store Keeper',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 5,
-            name: 'Ishola Ibrahim',
-            designation: 'Admin',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Suspended',
-            actions: 'pen icon'
-        },
-        {
-            id: 6,
-            name: 'Basit Imraan',
-            designation: 'Clerk',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 7,
-            name: 'Adeleke Maryam',
-            designation: 'Admin',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Deleted',
-            actions: 'pen icon'
-        },
-        {
-            id: 8,
-            name: 'Kazeem Jimoh',
-            designation: 'Secretary',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 9,
-            name: 'Raymond Akio',
-            designation: 'Store Keeper',
-            mobile: '+2348066460845',
-            email: 'quadri1435@gmail.com',
-            address: 'Plot 6, Orogun Ojoo Ibadan',
-            date: '10/11/2021',
-            Status: 'Status',
-            actions: 'pen icon'
-        },
-        {
-            id: 10,
+            id: <input type='checkbox'/>,
             name: 'Kazeem Akio',
             designation: 'Secretary',
             mobile: '+2348066460845',
@@ -346,13 +339,17 @@ const Staff = () => {
     const navigate = useNavigate()
     const [pageNum, setPageNum] = useState(0);
 
+    const toEachStaffDetails =()=>{
+        navigate('/eachStaffDetails', {state: {data: my_datas}});
+    }
+
     const usersPerPage = 10;
     const pageVisited = pageNum * usersPerPage;
     const handlePageClick = ({ selected }) => {
       setPageNum(selected);
     };
 
-    const pageCount = Math.ceil(datas.length / usersPerPage);
+    const pageCount = Math.ceil(my_datas.length / usersPerPage);
 
   return (
     <div className='dashBoard'>
@@ -403,7 +400,7 @@ const Staff = () => {
                     <div>
                         <table>
                             <tr>
-                                <th><input type='checkbox'/></th>
+                                <th><input type='checkbox' style={{marginLeft:'10px'}} /></th>
                                 <th>Name</th>
                                 <th>Designation</th>
                                 <th>Mobile</th>
@@ -414,20 +411,20 @@ const Staff = () => {
                                 <th>Actions</th>
                             </tr>
                             {
-                            datas
+                            my_datas
                             .slice(pageVisited, pageVisited + usersPerPage)
                             .map((data)=>{
                                 return(
-                                    <tr>
-                                        <td>{data.id}</td>
-                                        <td>{data.name}</td>
-                                        <td>{data.designation}</td>
-                                        <td>{data.mobile}</td>
-                                        <td>{data.email}</td>
-                                        <td>{data.address}</td>
-                                        <td>{data.date}</td>
-                                        <td>{data.Status}</td>
-                                        <td>{data.actions}</td>
+                                    <tr onClick={toEachStaffDetails}>
+                                            <td><input type='checkbox' style={{marginLeft:'10px'}} /></td>
+                                            <td>{data.name}</td>
+                                            <td>{data.designation}</td>
+                                            <td>{data.mobile}</td>
+                                            <td>{data.email}</td>
+                                            <td>{data.address}</td>
+                                            <td>{data.date}</td>
+                                            <td>{data.Status}</td>
+                                            <td>{data.actions}</td>
                                     </tr>
 
                                 )

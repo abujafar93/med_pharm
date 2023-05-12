@@ -142,6 +142,7 @@ input:focus {
     border: none;
     width: 30%;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 
 .card p {
