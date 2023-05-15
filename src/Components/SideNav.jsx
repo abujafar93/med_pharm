@@ -22,7 +22,7 @@ const SideNav = () => {
           background: isActive ? "rgba(0, 183, 255, 0.08)" : "inherit",
           color: isActive ? "#00B5FF" : "inherit",
           fontWeight: isActive ? 600 : "inherit"
-        })} to="/" className='bar_box'>
+        })} to="/dashboard" className='bar_box'>
           <div className='bar_box2'>
             <div className='bar_box3'><MdDashboard/></div>
             <p>DashBoard</p>

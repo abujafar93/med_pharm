@@ -20,13 +20,15 @@ import AddStaff from './AddStaff'
 import ProfilingStaff from './ProfilingStaff'
 import OnboardingSuccess from './OnboardingSuccess'
 import EachStaffDetails from './EachStaffDetails'
+import LogIn from './LogIn'
 
 
 const Home = () => {
   return (
     <>
 	    <Routes>
-			<Route path="/" element={<DashBoard />}/>
+			<Route path="/" element={<LogIn />}/>
+			<Route exact path="dashboard" element={<DashBoard />}/>
 			<Route path="/staff" element={<Staff />}/>
             <Route path='/client' element={<OtherClients />}/>
 			<Route path='/drug' element={<Drugs />}/>
